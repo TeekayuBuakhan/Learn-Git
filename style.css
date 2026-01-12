@@ -1,0 +1,25 @@
+/* 1. นำเข้าฟอนต์ Google Fonts (Kanit) */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+
+/* 2. กำหนดฟอนต์หลักให้ทั้งเว็บ */
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+/* 3. Custom CSS ที่เราเขียนเอง (เช่น Animation ลอยไปมา) */
+.float-anim {
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* Keyframes สำหรับ Animation */
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px); /* ลอยขึ้น 20px */
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

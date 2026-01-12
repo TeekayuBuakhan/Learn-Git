@@ -1,0 +1,55 @@
+<table class="my-table">
+  <thead>
+    <tr>
+      <th>ลำดับ</th>
+      <th>ชื่อรายการ</th>
+      <th>ราคา</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>ไม้แบดมินตัน</td>
+      <td>2,500 บาท</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ลูกแบด (หลอด)</td>
+      <td>650 บาท</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>กระเป๋ากีฬา</td>
+      <td>1,200 บาท</td>
+    </tr>
+  </tbody>
+</table>
+
+<style>
+  .my-table {
+    width: 100%;
+    border-collapse: collapse; /* ทำให้เส้นขอบติดกัน */
+    font-family: sans-serif;
+  }
+
+  .my-table th, .my-table td {
+    border: 1px solid #ddd; /* สร้างเส้นขอบ */
+    padding: 12px; /* เพิ่มพื้นที่ข้างในช่อง */
+    text-align: left;
+  }
+
+  .my-table th {
+    background-color: #04AA6D; /* สีพื้นหลังหัวตาราง */
+    color: white;
+  }
+
+  /* ทำแถวสลับสี (Zebra Stripes) */
+  .my-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  /* เอฟเฟกต์ตอนเอาเมาส์ไปชี้ */
+  .my-table tr:hover {
+    background-color: #ddd;
+  }
+</style>

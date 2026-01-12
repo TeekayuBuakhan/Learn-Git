@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tailwind Project</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#4F46E5', // สร้างสีชื่อ brand
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white shadow-sm p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-brand">MyLogo</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-brand transition">หน้าหลัก</a></li>
+                <li><a href="#" class="hover:text-brand transition">เกี่ยวกับเรา</a></li>
+                <li><a href="#" class="bg-brand text-white px-4 py-2 rounded-full hover:bg-opacity-90 transition">ติดต่อเรา</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="container mx-auto mt-10 p-6 flex flex-col-reverse md:flex-row items-center">
+        <div class="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+                สวัสดีครับ! <br>
+                <span class="text-brand">นี่คือเว็บไซต์ตัวอย่าง</span>
+            </h2>
+            <p class="text-gray-600 mb-8 text-lg">
+                หน้านี้ถูกตกแต่งด้วย Tailwind CSS เป็นหลัก ผสมกับ Custom CSS เล็กน้อยเพื่อความสวยงาม
+            </p>
+            <button class="bg-brand text-white text-lg px-8 py-3 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition transform duration-300">
+                เริ่มต้นใช้งาน
+            </button>
+        </div>
+
+        <div class="md:w-1/2 flex justify-center">
+            <div class="float-anim bg-gradient-to-tr from-blue-400 to-purple-500 w-64 h-64 rounded-full flex items-center justify-center text-white text-6xl shadow-2xl">
+                🚀
+            </div>
+        </div>
+    </header>
+
+    <section class="container mx-auto mt-20 p-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <div class="text-4xl mb-4">⚡</div>
+                <h3 class="text-xl font-bold mb-2">รวดเร็ว</h3>
+                <p class="text-gray-500">เขียนโค้ดได้ไวขึ้นด้วย Utility Classes</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <div class="text-4xl mb-4">🎨</div>
+                <h3 class="text-xl font-bold mb-2">สวยงาม</h3>
+                <p class="text-gray-500">ออกแบบ UI ที่ทันสมัยได้ง่ายๆ</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <div class="text-4xl mb-4">📱</div>
+                <h3 class="text-xl font-bold mb-2">รองรับมือถือ</h3>
+                <p class="text-gray-500">Responsive Design ได้ในตัวทันที</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
